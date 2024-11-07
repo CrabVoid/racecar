@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="1st" />
+    <input type="number" id="2nd" />
+    <button id="btn">Enter</button>
+    <script>
+      const num1 = document.getElementById("1st");
+      const num2 = document.getElementById("2nd");
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", function () {
+        const smth = document.createElement("p");
+        document.body.appendChild(smth);
+
+        if (
+          (num1.valueAsNumber > num2.valueAsNumber) &
+          (num1.valueAsNumber >= 1) &
+          (num2.valueAsNumber >= 1)
+        ) {
+          for (let i = num2.valueAsNumber; i <= num1.valueAsNumber; i++) {
+            console.log(i);
+            smth.textContent += i + ",";
+          }
+        } else {
+          alert(
+            "did you try the medicine drug ( yes i tried the medicine drug) you are stupid--only stupid people use the medicine drug"
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

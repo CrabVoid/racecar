@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" ; id="input" />
+    <button id="myButton">press here</button>
+
+    <script>
+      // console.log("Ralfs");
+
+      const inputText = document.getElementById("input");
+      console.log(inputText.value);
+      //const inputField = document.getElementById("input-text-field");
+      const btn = document.getElementById("myButton");
+
+      function printName(inputName) {
+        console.log(inputName);
+      }
+      printName("antra");
+
+      btn.addEventListener("click", handleBtnClick);
+
+      function handleBtnClick() {
+        console.log(inputText.value);
+      }
+    </script>
+  </body>
+</html>
